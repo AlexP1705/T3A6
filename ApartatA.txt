@@ -1,0 +1,7 @@
+mkdir un dos tres
+nano un.txt
+ps aux > dos\processos.txt
+grep 'root' processos.txt
+awk '{print $2, $9}'processos.txt
+mv processos.txt dos/
+awk '$2 >= 100 && $2 < 1000 {print $1, $2, $11}' processos.txt | sed 's/ /:/g'

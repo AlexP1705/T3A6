@@ -1,0 +1,11 @@
+grep -c 'Moby' MobyDick.txt
+grep -o 'Moby' MobyDick.txt | wc -l
+grep -o -w 'if' MobyDick.txt | wc -l
+echo "CHAPTER 1. Loomings" > capitulos.txt
+echo "CHAPTER 2. The Carpet-Bag" >> capitulos.txt
+echo "CHAPTER 3. The Spouter-Inn" >> capitulos.txt
+grep -c '^Moby' MobyDick.txt
+grep -c 'Dick$' MobyDIck.txt
+nano resum.txt
+sed 's/Whale/CACHALOTE/g' MobyDick.txt > cachalote.txt
+awk '{print $1 ":" $4}' processos.txt > processos2.txt
